@@ -1,0 +1,15 @@
+<script>
+    navigator.geolocation.getCurrentPosition(success, fail);
+
+    function success(position) {
+        console.log('Longitude:' + position.coords.longitude);
+        console.log('Latitude:' + position.coords.latitude);
+        // console.log('Altitude:' + position.coords.altitude);
+        // console.log('Speed:' + position.coords.speed);
+    }
+
+    function fail(details) {
+        console.log(details.code + details.message); // Log the error 
+    }
+
+</script>
